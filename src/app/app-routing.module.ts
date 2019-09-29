@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { FontsComponent } from './main/examples/fonts/fonts.component';
-import { BackgroundsComponent } from './main/examples/backgrounds/backgrounds.component';
-import { PreloadersComponent } from './main/examples/preloaders/preloaders.component';
+import { FontStylesComponent } from './main/types/font-styles/font-styles.component';
+import { FontColorsComponent } from './main/types/font-colors/font-colors.component';
+import { PreloadersComponent } from './main/types/preloaders/preloaders.component';
+import { HomeComponent } from './main/home/home.component';
 
 const routes: Routes = [
-  { path: 'fonts', component: FontsComponent },
-  { path: 'backgrounds', component: BackgroundsComponent },
+  { path: '', component: HomeComponent },
+  { path: 'font-styles', component: FontStylesComponent },
+  { path: 'font-colors', component: FontColorsComponent },
   { path: 'preloaders', component: PreloadersComponent },
   { path: '**', redirectTo: '' }
 ];

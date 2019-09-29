@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BackgroundsComponent } from './backgrounds.component';
+import { FontColorsComponent } from './font-colors.component';
 
-describe('BackgroundsComponent', () => {
-  let component: BackgroundsComponent;
-  let fixture: ComponentFixture<BackgroundsComponent>;
+describe('FontColorsComponent', () => {
+  let component: FontColorsComponent;
+  let fixture: ComponentFixture<FontColorsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BackgroundsComponent ]
+      declarations: [ FontColorsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BackgroundsComponent);
+    fixture = TestBed.createComponent(FontColorsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

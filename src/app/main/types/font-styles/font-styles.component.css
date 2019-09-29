@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Lato|Mansalva|Press+Start+2P|Raleway|Roboto|Turret+Road&display=swap');
+
+.container {
+  padding: 10px;
+}
+
+table {
+  margin: auto;
+  width: 80%;
+}
+
+td {
+  width: 20%;
+  padding: 2%;
+}
+
+.title {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+span {
+  margin: 0px 50px;
+}
+
+.big {
+  font-size: 3em;
+}
+
+.medium {
+  font-size: 1.5em;
+}
+
+.small {
+  font-size: .75em;
+}
+
+.raleway {
+  font-family: 'Raleway', monospace;
+}
+
+.roboto {
+  font-family: 'Roboto', monospace
+}
+
+.mansalva {
+  font-family: 'Mansalva', monospace
+}
+
+.lato {
+  font-family: 'Lato', monospace
+}
+
+.press-start {
+  font-family: 'Press Start 2P', monospace
+}
+
+.big-shoulders {
+  font-family: 'Big Shoulders Text', monospace
+}
+
+.turret-road {
+  font-family: 'Turret Road', monospace
+}
