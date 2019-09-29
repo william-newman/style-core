@@ -7,6 +7,7 @@ import { PreloadersComponent } from './main/types/preloaders/preloaders.componen
 import { FontStylesComponent } from './main/types/font-styles/font-styles.component';
 import { FontColorsComponent } from './main/types/font-colors/font-colors.component';
 import { HomeComponent } from './main/home/home.component';
+import { PalettesComponent } from './main/types/palettes/palettes.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HomeComponent } from './main/home/home.component';
     PreloadersComponent,
     FontStylesComponent,
     FontColorsComponent,
-    HomeComponent
+    HomeComponent,
+    PalettesComponent
   ],
   imports: [
     BrowserModule,

@@ -6,15 +6,20 @@
 
 table {
   margin: auto;
-  width: 80%;
+  width: 100%;
 }
 
 td {
-  width: 20%;
-  padding: 2%;
+  width: 24%;
+  padding: 1%;
+  border-top: dotted 1px rgb(0, 90, 60);
+  border-bottom: dotted 1px rgb(0, 90, 60);
+  border-collapse: collapse;
+  text-align: center;
 }
 
 .title {
+  text-align: left;
   font-size: 1em;
   font-weight: 700;
 }
