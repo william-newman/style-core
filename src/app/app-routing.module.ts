@@ -5,9 +5,11 @@ import { FontColorsComponent } from './main/types/font-colors/font-colors.compon
 import { PreloadersComponent } from './main/types/preloaders/preloaders.component';
 import { HomeComponent } from './main/home/home.component';
 import { PalettesComponent } from './main/types/palettes/palettes.component';
+import { Animations1Component } from './main/types/animations1/animations1.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: 'animations1', component: Animations1Component },
   { path: 'font-colors', component: FontColorsComponent },
   { path: 'font-styles', component: FontStylesComponent },
   { path: 'palettes', component: PalettesComponent },

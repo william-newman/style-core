@@ -8,6 +8,7 @@ import { FontStylesComponent } from './main/types/font-styles/font-styles.compon
 import { FontColorsComponent } from './main/types/font-colors/font-colors.component';
 import { HomeComponent } from './main/home/home.component';
 import { PalettesComponent } from './main/types/palettes/palettes.component';
+import { Animations1Component } from './main/types/animations1/animations1.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PalettesComponent } from './main/types/palettes/palettes.component';
     FontStylesComponent,
     FontColorsComponent,
     HomeComponent,
-    PalettesComponent
+    PalettesComponent,
+    Animations1Component
   ],
   imports: [
     BrowserModule,
