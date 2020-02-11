@@ -1,0 +1,175 @@
+/* $mine-shaft: #1a1a1a;
+$amber: #ffc300;
+
+$bat-height: 12.5rem; 
+$bat-width: $bat-height*3.04;
+
+@mixin equal-hw($size) {
+  height: $size; width: $size;
+}
+
+@mixin down-tri($w: 5em, $clr: $mine-shaft){
+  $h: $w*2;  
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: $h $w 0 $w;
+  border-color: $clr transparent transparent transparent;
+}
+
+@mixin pseudo-ele() {
+    content:'';
+    display:block;
+    position: absolute;
+}
+
+
+
+.bat {
+  background-color: $mine-shaft;
+  height: $bat-height; width: $bat-width;
+  font-size: $bat-height*.08;
+  position: relative;
+  margin: 2rem;
+  text-align: center;  
+  
+  &:before {
+    //create space behind head
+    @include pseudo-ele();
+    $head-space: 12.6em;
+    border-radius: 50%;
+    height: $head-space*.85;
+    width: $head-space;
+    background: $amber;
+    top: $head-space*-.5;
+    left: 50%;
+    margin-left: $head-space/-2;
+  }
+}
+
+.head {
+  $head-size: 6.3em;
+  background: $mine-shaft;
+  border-radius: 50%;
+  height: $head-size*1.05;
+  width: $head-size;
+  position: relative;
+  margin: 0 auto;
+  z-index: 100;
+  
+  &:before, &:after {
+    $ear-size: 6em;
+    @include pseudo-ele();
+    height: $ear-size; width: $ear-size;
+    background-color: $mine-shaft; 
+    border-radius: $ear-size 0px;
+    top: -1em;
+    z-index: -1;
+  }
+  
+  &:before {
+    transform: rotate(110deg);
+    left: -1.35em;
+  }
+  &:after {
+    right: -1.35em;
+    transform: rotate(-20deg);
+  }
+}
+
+.eye {
+  background: #fff;
+  border-radius: 50%;
+  @include equal-hw($bat-width*.05);
+  position: absolute;
+  top: 1.75em; left: 1em;
+  
+  &:before {
+    @include equal-hw(.5em);
+    background: #fff;
+    border-radius: 50%;
+    content: '';    
+    position: absolute;
+    top: 32%;
+    left: 30%;
+    box-shadow: .25em .2em 0 .25em #000;
+  }
+  
+  + .eye {
+    right: 1em; left: initial;
+  }
+}
+
+.bod {   
+  &:before,&:after {
+    @include pseudo-ele();
+    background: $amber;
+    height: $bat-width*.5; width: $bat-width*.3;      
+    top: $bat-width*-.34;
+  }
+  &:before {
+    left: 0;
+    transform: rotate(75deg);
+  }
+  &:after {
+    transform: rotate(-75deg);
+    right: 0;
+  }
+}
+
+.wings { 
+  $behind-body-x: 11em;
+  $behind-body-y: 7em;
+  $x-offset: -24em;
+  @include equal-hw(0);
+  
+  border-style: solid;
+  border-width: 0 $behind-body-x $behind-body-y $behind-body-x;
+  border-color: transparent transparent $amber transparent;
+  margin-left: $behind-body-x*-1;
+  position: absolute;  
+  bottom: $behind-body-y*-.5; left: 50%;
+  
+  &:before,&:after {
+    $w: 12.6em;    
+    @include pseudo-ele();  
+    background: $amber;
+    border-radius: 50%;
+    height: $w*.85; width: $w;   
+    position: absolute;
+    bottom: $behind-body-y*-.825;
+  }
+  
+  &:before { 
+    box-shadow: 8em 5em 0 $amber;
+    left: $x-offset;    
+  }
+  
+  &:after {        
+    box-shadow: -8em 5em 0 $amber;
+    right: $x-offset;
+  }
+}
+
+.tail {
+  @include down-tri(4em);
+  margin: 0 auto;
+  position: relative;
+}
+
+
+///////////////////////////
+html {
+  font-size: 1vw;
+}
+body {
+  background-color: $amber;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.sr-only {
+  position: absolute;
+  left: -9999em;
+} */
