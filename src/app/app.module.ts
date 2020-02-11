@@ -10,6 +10,7 @@ import { FontColorsComponent } from './main/types/font-colors/font-colors.compon
 import { HomeComponent } from './main/home/home.component';
 import { PalettesComponent } from './main/types/palettes/palettes.component';
 import { Animations1Component } from './main/types/animations1/animations1.component';
+import { ThemesComponent } from './main/types/themes/themes.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { Animations1Component } from './main/types/animations1/animations1.compo
     FontColorsComponent,
     HomeComponent,
     PalettesComponent,
-    Animations1Component
+    Animations1Component,
+    ThemesComponent
   ],
   imports: [
     BrowserModule,

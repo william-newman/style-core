@@ -6,6 +6,7 @@ import { PreloadersComponent } from './main/types/preloaders/preloaders.componen
 import { HomeComponent } from './main/home/home.component';
 import { PalettesComponent } from './main/types/palettes/palettes.component';
 import { Animations1Component } from './main/types/animations1/animations1.component';
+import { ThemesComponent } from './main/types/themes/themes.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'font-styles', component: FontStylesComponent },
   { path: 'palettes', component: PalettesComponent },
   { path: 'preloaders', component: PreloadersComponent },
+  { path: 'themes', component: ThemesComponent },
   { path: '**', redirectTo: '' }
 ];
 
